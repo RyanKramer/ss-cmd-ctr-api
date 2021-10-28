@@ -1,0 +1,9 @@
+smartsheet:
+    api_token: wPjpFbbi41ib156ItMIchn0p2aCOqO5Woxdw3
+    master_sheet: 2843502913578884
+database:
+    username: "admin"
+    password: "pmodatabase"
+    host: "ohio-pmo-database.cdvzrzppndm4.us-east-1.rds.amazonaws.com"
+    port: 1521
+    sid: "ORCL"
