@@ -1,9 +1,13 @@
 FROM python:3.9-buster
+
+COPY ./requirements.txt /app/requirements.txt
+
 WORKDIR /app
-COPY . .
 
 RUN pip install -r requirements.txt
 
-ENV PORT 8443
-EXPOSE 8443
+COPY . /app
+
+EXPOSE 5000
+
 ENTRYPOINT ["python", "main.py"]

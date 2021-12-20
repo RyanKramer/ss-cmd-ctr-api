@@ -29,4 +29,4 @@ if __name__ == "__main__":
     # if is_prod:
     #     app.run(debug=False, port=os.environ.get('PORT', 80), use_reloader=False)
     # else:
-    app.run(host="localhost", threaded=True, port=5000)
+    app.run(host="0.0.0.0", threaded=True, port=5000)
