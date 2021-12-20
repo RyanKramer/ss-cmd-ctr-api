@@ -7,20 +7,7 @@ from routes.reports import reports_blueprint
 app = Flask(__name__, static_url_path='/')
 app.register_blueprint(reports_blueprint)
 # CORS(app, support_credentials=True, resources={r"/api/*": {"origins": "http://localhost:3000"}})
-CORS(app, supports_credentials=True, origins=["http://localhost:3000", "http://127.0.0.1/3000"])
-
-
-# @app.after_request
-# def add_headers(response):
-#     # response.headers.add('Content-Type', 'application/json')
-#     # response.headers.add('Access-Control-Allow-Origin', react_base_url)
-#     # response.headers.add('Access-Control-Allow-Credentials', "true")
-#     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000'),
-#     response.headers.add('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS')
-#     response.headers.add("Access-Control-Allow-Headers",
-#                          "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, withCredentials")
-#     response.headers.add('Access-Control-Expose-Headers', 'Content-Type,Content-Length,Authorization,X-Pagination')
-#     return response
+CORS(app, supports_credentials=True, origins=["http://localhost:3000", "http://127.0.0.1/3000", "https://ss-cmd-ctr-ui.apps.os-dev-nadc.aepsc.com"])
 
 
 @app.route('/')

@@ -1,0 +1,11 @@
+node_modules
+react-app/node_modules
+*.log
+cicd/
+*.md
+server-js-sequence.source
+server-js-sequence.svg
+.nvmrc
+.git/
+.gitignore
+.cfignore
